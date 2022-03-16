@@ -11,7 +11,7 @@ import org.mockito.junit.MockitoJUnitRunner;
 import java.util.Optional;
 
 
-@RunWith(MockitoJUnitRunner.class)
+@RunWith(MockitoJUnitRunner.Silent.class)
 public class AnalyzerTest {
 
     @Mock
@@ -26,7 +26,6 @@ public class AnalyzerTest {
         //giving
 
         //when
-        System.out.println(grid);
         when(grid.getRows()).thenReturn("-------\n-------\n-------\n-------\n-------\n-BBRRRR");
         when(grid.getColumns()).thenReturn("-------\n-------\n-------\n-------\n-------\n-BBRRRR");
         when(grid.getDiag()).thenReturn("-------\n-------\n-------\n-------\n-------\n-BBRRRR");
@@ -43,7 +42,6 @@ public class AnalyzerTest {
         //giving
 
         //when
-        System.out.println(grid);
         when(grid.getRows()).thenReturn("-------\n-------\n-------\n-------\n-------\nR-BBBB");
         when(grid.getColumns()).thenReturn("------\n------\n------\n------\n------\n------\nRBBBB");
         when(grid.getDiag()).thenReturn("-------\n-------\n-------\n-------\n-------\nR-BBBB");
@@ -60,7 +58,6 @@ public class AnalyzerTest {
         //giving
 
         //when
-        System.out.println(grid);
         when(grid.getRows()).thenReturn("-------\n-------\n-------\n-------\n-------\nR-----");
         when(grid.getColumns()).thenReturn("------\n------\n------\n------\n------\n------\n-----");
         when(grid.getDiag()).thenReturn("-------\n-------\n-------\n-------\n-------\nR------");
