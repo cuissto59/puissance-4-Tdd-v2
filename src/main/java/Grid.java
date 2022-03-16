@@ -5,15 +5,15 @@ public class Grid {
 
     public String getRows(){
 
-        return null;
+        return "";
     }
     public String getColumns(){
 
-        return null;
+        return "";
     }
 
     public String getDiag(){
 
-        return null;
+        return "";
     }
 }
